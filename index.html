@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cosmo Santoni</title>
+<meta name="description" content="Cosmo Santoni — writer and filmmaker.">
+<link rel="icon" href="data:,">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html {
+    -webkit-text-size-adjust: 100%; text-size-adjust: 100%;
+    background: #2b3627;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(239,232,213,.3) transparent;
+  }
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: rgba(239,232,213,.3); border-radius: 5px; }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(239,232,213,.55); }
+  body {
+    /* DSCF0162: dusk sky, olive to gold, sampled top to bottom; film grain blended in */
+    background-color: #2b3627;
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E"),
+      linear-gradient(to bottom,
+        #2b3627, #38402a 14%, #43482f 28%, #4f5132 42%,
+        #5d5a35 56%, #6c6437 70%, #7d6d33 82%, #8e7324 92%, #ad8627 100%);
+    background-size: 300px 300px, 100% 100%;
+    background-repeat: repeat, no-repeat;
+    background-blend-mode: overlay, normal;
+    color: #efe8d5;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; border-bottom: 1px solid rgba(239,232,213,.35); padding-bottom: 1px; transition: border-color .2s ease; }
+  a:hover { border-color: rgba(239,232,213,.9); }
+
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    max-width: 860px;
+    margin: 12vh auto 0;
+    padding: 0 24px;
+  }
+  .intro img { display: block; width: min(340px, 42vw); height: auto; }
+  .intro .blurb { max-width: 24em; }
+  .intro .blurb p + p { margin-top: 1.1em; }
+  .intro .blurb .mail { display: inline-block; margin-top: 1.8em; }
+  @media (max-width: 700px) {
+    .intro { flex-direction: column; gap: 44px; text-align: center; }
+    .intro img { width: 100%; max-width: 340px; }
+  }
+
+  header {
+    padding: 96px 24px 0;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: .32em;
+    text-transform: uppercase;
+    text-indent: .32em; /* optically recenters letterspaced text */
+  }
+  header .sub {
+    margin-top: 10px;
+    font-size: 13px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    text-indent: .14em;
+    color: rgba(239,232,213,.55);
+  }
+
+  .gallery { padding: 14vh 24px 0; }
+  .gallery figure { margin: 0 0 16vh; }
+  /* equal visual area: width scales with sqrt of aspect ratio */
+  .gallery img {
+    display: block;
+    margin: 0 auto;
+    width: min(640px, 100%);
+    height: auto;
+  }
+  .gallery img.wide { width: min(784px, 100%); }
+  .gallery img.tall { width: min(522px, 100%); }
+
+  footer {
+    margin-top: 14vh;
+    padding: 0 24px 72px;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: .1em;
+    color: rgba(46,39,10,.8);
+  }
+  footer .cities { text-transform: uppercase; }
+  footer .cities span { padding: 0 .9em; }
+  footer .copyright { margin-top: 14px; color: rgba(46,39,10,.5); }
+
+  @media (max-width: 600px) {
+    header { padding-top: 64px; }
+    .gallery { padding-top: 10vh; }
+    .gallery figure { margin-bottom: 11vh; }
+    footer .cities span { padding: 0 .45em; display: inline-block; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Cosmo Santoni</h1>
+  <p class="sub">Writer &amp; Filmmaker</p>
+</header>
+
+<section class="intro">
+  <img src="img/hero.jpg" width="1333" height="2000" alt="Man laughing on red vinyl dinette chair under Winstead's Drive-In print" fetchpriority="high">
+  <div class="blurb">
+    <p>Cosmo Santoni is a writer and filmmaker based in Chicago.</p>
+    <p>His work draws on surrealism, absurdism, and Greek tragedy, often filtering the darkness of the mundane through a kaleidoscopic comic lens and the lives of ordinary people with everyday habits and preoccupations.</p>
+    <p>He is currently writing his debut short film, <em>By Thursday They Will Die</em>, which he is preparing to direct.</p>
+    <a class="mail" href="mailto:santonicosmo@gmail.com">santonicosmo@gmail.com</a>
+  </div>
+</section>
+
+<main class="gallery">
+  <figure><img src="img/01.jpg" class="wide" width="2000" height="1333" alt="Concession worker beneath hand-lettered menu boards and Pepsi signs" loading="lazy" decoding="async"></figure>
+  <figure><img src="img/02.jpg" width="1998" height="2000" alt="Silver Saddle Motel neon sign glowing green and orange at night" loading="lazy" decoding="async"></figure>
+  <figure><img src="img/04.jpg" width="2000" height="2000" alt="Vintage-car roller coaster cresting a golden track under American flag" loading="lazy" decoding="async"></figure>
+  <figure><img src="img/05.jpg" width="1998" height="2000" alt="American flag over desert scrub at a hazy canyon overlook" loading="lazy" decoding="async"></figure>
+  <figure><img src="img/08.jpg" width="1998" height="2000" alt="Silhouetted figure watching city lights through venetian blinds at night" loading="lazy" decoding="async"></figure>
+  <figure><img src="img/09.jpg" class="tall" width="1333" height="2000" alt="Dark silhouette against blurred amber city lights at night" loading="lazy" decoding="async"></figure>
+</main>
+
+<footer>
+  <p class="cities">Los Angeles, CA<span>|</span>Chicago, IL<span>|</span>London, UK</p>
+  <p class="copyright">&copy; 2026 Cosmo Santoni</p>
+</footer>
+
+</body>
+</html>
