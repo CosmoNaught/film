@@ -80,6 +80,7 @@
 
   .gallery { padding: 14vh 24px 0; }
   .gallery figure { margin: 0 0 16vh; }
+  .gallery figure:last-child { margin-bottom: 0; }
   /* equal visual area: width scales with sqrt of aspect ratio */
   .gallery img {
     display: block;
@@ -89,6 +90,32 @@
   }
   .gallery img.wide { width: min(784px, 100%); }
   .gallery img.tall { width: min(522px, 100%); }
+
+  .script { padding: 0 24px; }
+  .script .title-card {
+    margin: 11vh auto;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: .32em;
+    text-indent: .32em;
+    text-transform: uppercase;
+    color: #efe8d5;
+  }
+  /* paper = translucent layer over the live gradient, ink multiplied on top,
+     so each page picks up the exact background color at its own position */
+  .script figure {
+    margin: 0 auto 7vh;
+    width: min(600px, 100%);
+    background: rgba(255,243,209,.66);
+    box-shadow: 0 2px 14px rgba(61,40,8,.22), 0 14px 52px rgba(61,40,8,.34);
+  }
+  .script img {
+    display: block;
+    width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+  }
 
   footer {
     margin-top: 14vh;
@@ -136,6 +163,12 @@
   <figure><img src="img/08.jpg" width="1998" height="2000" alt="Silhouetted figure watching city lights through venetian blinds at night" loading="lazy" decoding="async"></figure>
   <figure><img src="img/09.jpg" class="tall" width="1333" height="2000" alt="Dark silhouette against blurred amber city lights at night" loading="lazy" decoding="async"></figure>
 </main>
+
+<section class="script" id="script">
+  <p class="title-card">By Thursday They Will Die</p>
+  <figure><img src="img/script-p1.jpg" width="1400" height="1812" alt="By Thursday They Will Die, script page one" loading="lazy" decoding="async"></figure>
+  <figure><img src="img/script-p2.jpg" width="1400" height="1812" alt="By Thursday They Will Die, script page two" loading="lazy" decoding="async"></figure>
+</section>
 
 <footer>
   <p class="cities">Los Angeles, CA<span>|</span>Chicago, IL<span>|</span>London, UK</p>
